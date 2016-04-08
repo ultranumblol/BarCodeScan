@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/id_tv_top"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <!--
+             <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/exit" />
+        -->
+		<Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="测试扫描"
+				android:id="@+id/ceshisaomiao"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="50dp"
+		/>
+        <Button
+            android:id="@+id/btnOpen"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_special_disease_circle"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="提交"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+			<TextView android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:text="条目:0"
+			    android:textSize="18dp"
+			    android:id="@+id/id_yisao"
+			    android:layout_marginBottom="28dp"
+			    android:layout_marginLeft="20dp"
+			    android:layout_alignParentBottom="true"
+			    
+			    />
+			<TextView android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:text="总数:0件"
+			    android:textSize="18dp"
+			    android:id="@+id/id_gdzongshu"
+			    android:layout_marginBottom="28dp"
+			    android:layout_marginRight="20dp"
+			    android:layout_alignParentBottom="true"
+			    android:layout_alignParentRight="true"
+			    
+			    />
+			
+        <!--
+             <Button
+            android:id="@+id/emptyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnOpen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/empty" />
+        -->
+
+    <com.ryg.slideview.ListViewCompat
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1.0px"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/transparent"
+        android:layout_above="@id/btnOpen"
+         android:layout_below="@id/id_tv_top"
+        android:scrollbars="none" />
+    
+       <ListView
+            android:id="@+id/id_main_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnOpen"
+            android:visibility="gone"
+            android:layout_below="@id/id_tv_top" > 
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>
